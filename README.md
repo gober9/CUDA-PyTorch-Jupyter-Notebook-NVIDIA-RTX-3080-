@@ -6,7 +6,13 @@ App Verions:
 - CUDA: 11.8
 - Windows 10
 
-### Uninstall Current CPU-only PyTorch
+### 1. Uninstall Current CPU-only PyTorch
+```bash
+pip uninstall torch torchvision torchaudio
+```
+
+### 2. Install the desired version of CUDA.
+CUDA toolkit versions can be found here https://developer.nvidia.com/cuda-toolkit-archive.
 ```bash
 pip uninstall torch torchvision torchaudio
 ```
