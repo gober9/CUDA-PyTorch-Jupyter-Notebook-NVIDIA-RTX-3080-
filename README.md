@@ -18,3 +18,23 @@ CUDA toolkit versions can be found here https://developer.nvidia.com/cuda-toolki
 ```bash
 pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu118
 ```
+
+### 4. Boot up Jupyter Notebook
+```bash
+Jupyter Notebook
+```
+
+### 5. Import torch and test the version of CUDA and its availability. 
+```bash
+import torch
+print(torch.__version__)
+print(torch.cuda.is_available())
+print(torch.version.cuda)
+```
+
+This should be the output if done successfully...
+```bash
+2.5.1+cu118
+True
+11.8
+```
